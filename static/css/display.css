@@ -1,0 +1,52 @@
+.header {
+    text-align: center;
+    background: #942c2c;
+    color: white;
+    background: url('https://www.pixelstalk.net/wp-content/uploads/2016/10/Pine-Forest-HD-Wallpapers-For-Pc.jpg') center/cover;
+    position: relative;
+    /* background-size: 50% 100%; */
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.frontText {
+    text-align: center;
+    background-position-y: 50%;
+    height: 400px;
+    line-height: 3em;
+    min-height: 200px;
+    font-size: 72pt;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+float: left;
+}
+
+li a {
+display: block;
+color: white;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+li a:hover:not(.active) {
+background-color: #111;
+}
+
+.active {
+background-color: #4CAF50;
+}
+
+.hm a {
+    font-size: 64pt;
+}
