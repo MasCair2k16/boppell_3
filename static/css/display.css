@@ -2,7 +2,7 @@
     text-align: center;
     background: #942c2c;
     color: white;
-    background: url('https://www.pixelstalk.net/wp-content/uploads/2016/10/Pine-Forest-HD-Wallpapers-For-Pc.jpg') center/cover;
+    background: url('../photos/pineForest.jpeg') center/cover;
     position: relative;
     /* background-size: 50% 100%; */
     background-repeat: no-repeat;
@@ -16,6 +16,7 @@
     line-height: 3em;
     min-height: 200px;
     font-size: 72pt;
+    position: relative;
     
 }
 
@@ -24,7 +25,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(255, 255, 255, .0);
 }
 
 li {
@@ -37,16 +38,19 @@ color: white;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
+font-size: 15pt;
+
 }
 
 li a:hover:not(.active) {
-background-color: #111;
+font-size: 15pt;
+background-color:  rgba(0, 0, 0, 0.376);
 }
 
 .active {
 background-color: #4CAF50;
 }
 
-.hm a {
-    font-size: 64pt;
+.topic {
+    font-size: 30pt;
 }
