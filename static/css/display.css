@@ -14,7 +14,7 @@
     background-position-y: 50%;
     height: 400px;
     line-height: 3em;
-    min-height: 200px;
+    /* min-height: 200px; */
     font-size: 72pt;
     position: relative;
     
@@ -53,4 +53,13 @@ background-color: #4CAF50;
 
 .topic {
     font-size: 30pt;
+}
+
+@media screen and (max-width: 375px) {
+    .frontText{
+        font-size: 45pt;
+        background-position-y: 20%;
+        height: 300px;
+
+    }
 }
