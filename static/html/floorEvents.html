@@ -9,31 +9,32 @@
         <link rel="stylesheet" type="text/css" href="/css/display.css" media="screen"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script type="text/javascript" src="../axios.min.js"></script>
-        <!-- <script type="text/javascript" src="/js/scripts.js"></script> -->
+        <script type="text/javascript" src="/js/scripts.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body style="background-color: #f1f1f1">
+    <body class="header">
 
-        </nav>
-        <div class="header">
-                <ul>
-                        <li><a href="../index.html">Floor 3</a></li>
-                        <li><a class="active" href="floorEvents.html">Floor Events</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="resouces.html">Resources</a></li>
-                </ul>
-                <div class="frontText"><u>The 3rd Floor</u></div>
+        <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn;" style="font-size: 40pt; text-align: right" onclick="closeNav()">×</a>
+                <a  href="../index.html">Floor 3</a></li>
+                <a  class="active" href="floorEvents.html">Floor Events</a></li>
+                <a  href="contact.html">Contact</a></li>
+                <a  href="resouces.html">Resources</a></li>
         </div>
 
-        <div class="container" style="padding-top: 3%;">
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <div class="frontText"><u>The 3rd Floor</u></div>
+        
+
+        <div class="container" style="padding-top: 3%; background-color: #f1f1f1">
                 <h1 style="text-align: left; font-size:35pt">
                         Floor Events:
                 </h1>
-                <div class="container" style="padding-top: 3%;">
+                <div class="container">
                         <!-- <div class="topic">Annoucements:</div> -->
                         <div class="row">
-                                <div class="col-lg-8 col-md-10 mx-auto" style="padding-top: 3%">
+                                <div class="col-lg-8 col-md-10 mx-auto" style="padding-top: 3%; text-align: left">
                                         <!-- this is where I post stuff -->
                                         <article class="post-preview">
                                                 <h2 class="post-title" style="font-size: 25pt"><b>Pancakes & Ping-Pong on September 16th</b></h2>

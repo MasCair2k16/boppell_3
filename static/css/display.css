@@ -1,7 +1,7 @@
 .header {
     text-align: center;
     background: #942c2c;
-    color: white;
+    color: black;
     background: url('../photos/pineForest.jpeg') center/cover;
     position: relative;
     /* background-size: 50% 100%; */
@@ -9,43 +9,71 @@
     background-position: center;
 }
 
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+  
+  }
+
 .frontText {
     text-align: center;
     background-position-y: 50%;
-    height: 400px;
-    line-height: 3em;
+    height: 500px;
+    line-height: 4.5em;
     /* min-height: 200px; */
     font-size: 72pt;
     position: relative;
+    z-index:-1;
     
 }
 
-ul {
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+/* ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: rgba(255, 255, 255, .0);
+} */
+
+.openbtn {
+    font-size: 40px;
+    cursor: pointer;
+    float: left;
+    background-color: rgba(255, 255, 255, .0);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    padding-bottom: 20px;
+    z-index: 950;
 }
 
-li {
-float: left;
-}
-
-li a {
-display: block;
-color: white;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-font-size: 15pt;
-
-}
-
-li a:hover:not(.active) {
-font-size: 15pt;
-background-color:  rgba(0, 0, 0, 0.376);
-}
+.sidebar a:hover {
+    color: #f1f1f1;
+  }
 
 .active {
 background-color: #4CAF50;
@@ -56,10 +84,31 @@ background-color: #4CAF50;
 }
 
 @media screen and (max-width: 375px) {
+    
     .frontText{
-        font-size: 45pt;
-        background-position-y: 20%;
-        height: 300px;
+        font-size: 32pt;
+        background-position-y: 30%;
+        height: 200px;
+        padding-right: 60px;   
+    }
+}
 
+@media screen and (max-width: 360px) {
+    
+    .frontText{
+        font-size: 30pt;
+        background-position-y: 30%;
+        height: 200px;
+        padding-right: 60px;   
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    .frontText{
+        font-size: 25pt;
+        background-position-y: 30%;
+        height: 200px;
+        padding-right: 60px;   
     }
 }

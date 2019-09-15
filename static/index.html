@@ -9,31 +9,31 @@
         <link rel="stylesheet" type="text/css" href="/css/display.css" media="screen"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script type="text/javascript" src="axios.min.js"></script>
-        <!-- <script type="text/javascript" src="/js/scripts.js"></script> -->
+        <script type="text/javascript" src="js/scripts.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body style="background-color: #f1f1f1">
+    <body class="header">
 
-        </nav>
-        <div class="header">
-                <ul>
-                        <li><a class="active" href="index.html">Floor 3</a></li>
-                        <li><a href="html/floorEvents.html">Floor Events</a></li>
-                        <li><a href="html/contact.html">Contact</a></li>
-                        <li><a href="html/resouces.html">Resources</a></li>
-                </ul>
+        <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn;" style="font-size: 40pt; text-align: right" onclick="closeNav()">×</a>
+                <a class="active" href="index.html">Floor 3</a></li>
+                <a  href="html/floorEvents.html">Floor Events</a></li>
+                <a  href="html/contact.html">Contact</a></li>
+                <a  href="html/resouces.html">Resources</a></li>
+        </div>
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <div>
                 <div class="frontText"><u>The 3rd Floor</u></div>
         </div>
-
-        <div class="container" style="padding-top: 3%;">
+        <div class="container" style="padding-top: 3%; background-color: #f1f1f1">
                 <h1 style="text-align: center; font-size:35pt">
-                        Welcome 3rd Floor Residents to your website!
+                        Welcome 3rd Floor Residents to my website!
                 </h1>
                 <div class="container" style="padding-top: 3%;">
                         <!-- <div class="topic">Annoucements:</div> -->
                         <div class="row">
-                                <div class="col-lg-6 col-md-10 mx-auto" style="padding-top: 3%">
+                                <div class="col-lg-6 col-md-10 mx-auto" style="padding-top: 3%; text-align: left">
                                         <!-- this is where I post stuff -->
                                         <article class="post-preview">
                                                 <h2 class="post-title" style="font-size: 25pt"><b>Prime Time on September 12th</b></h2>

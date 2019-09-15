@@ -9,24 +9,25 @@
         <link rel="stylesheet" type="text/css" href="/css/display.css" media="screen"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script type="text/javascript" src="../axios.min.js"></script>
-        <!-- <script type="text/javascript" src="/js/scripts.js"></script> -->
+        <script type="text/javascript" src="/js/scripts.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body style="background-color: #f1f1f1">
+    <body class="header">
 
-        </nav>
-        <div class="header">
-                <ul>
-                        <li><a href="../index.html">Floor 3</a></li>
-                        <li><a href="floorEvents.html">Floor Events</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a class="active" href="html/resouces.html">Resources</a></li>
-                </ul>
-                <div class="frontText"><u>The 3rd Floor</u></div>
+        <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn;" style="font-size: 40pt; text-align: right" onclick="closeNav()">×</a>
+                <a  href="../index.html">Floor 3</a></li>
+                <a  href="floorEvents.html">Floor Events</a></li>
+                <a  href="contact.html">Contact</a></li>
+                <a  class="active" href="resouces.html">Resources</a></li>
         </div>
+        
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <div class="frontText"><u>The 3rd Floor</u></div>
+       
 
-        <div class="container" style="padding-top: 3%;">
+        <div class="container" style="padding-top: 3%; background-color: #f1f1f1">
                 <h1 style="text-align: left; font-size:35pt">
                         Resources:
                 </h1>
@@ -34,7 +35,7 @@
                         <!-- <div class="topic">Annoucements:</div> -->
                         <div class="row">
                                 <div class="row">
-                                        <div class="col" style="padding-top: 3%">
+                                        <div class="col" style="padding-top: 3%;text-align: left">
                                                 <a target="_blank" href="https://whitworthaswu.com/"><h1><u>ASWU</u></h2></a>
                                                 <h2>The Associated Students of Whitworth University</p>
                                                 <hr/>
@@ -56,7 +57,7 @@
 
 
                                         </div>
-                                        <div class="col" style="padding-top: 3%">
+                                        <div class="col" style="padding-top: 3%; text-align: left">
                                                 <a target="_blank" href="https://www.whitworth.edu/cms/administration/university-recreation-center/"><h1><u>University Recreations Center (U-Rec)</u></h2></a>
                                                 <h2>The Whitworth University Recreation Center (U-Rec) provides an on-campus facility where the Whitworth community can pursue physical fitness and wellness.</p>
                                                 <hr/>

@@ -9,34 +9,67 @@
         <link rel="stylesheet" type="text/css" href="/css/display.css" media="screen"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script type="text/javascript" src="../axios.min.js"></script>
-        <!-- <script type="text/javascript" src="/js/scripts.js"></script> -->
+        <script type="text/javascript" src="/js/scripts.js"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="form.css" >
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
-    <body style="background-color: #f1f1f1">
+    <body class="header">
 
-        </nav>
-        <div class="header">
-                <ul>
-                        <li><a href="../index.html">Floor 3</a></li>
-                        <li><a href="floorEvents.html">Floor Events</a></li>
-                        <li><a class="active" href="contact.html">Contact</a></li>
-                        <li><a href="resouces.html">Resources</a></li>
-                </ul>
-                <div class="frontText"><u>The 3rd Floor</u></div>
+        <div id="mySidebar" class="sidebar">
+                <a href="javascript:void(0)" class="closebtn;" style="font-size: 40pt; text-align: right" onclick="closeNav()">×</a>
+                <a  href="../index.html">Floor 3</a></li>
+                <a  href="floorEvents.html">Floor Events</a></li>
+                <a  class="active" href="contact.html">Contact</a></li>
+                <a  href="resouces.html">Resources</a></li>
         </div>
 
-        <div class="container" style="padding-top: 3%;">
+        <button class="openbtn" onclick="openNav()">☰</button>
+        <div class="frontText"><u>The 3rd Floor</u></div>
+       
+
+        <div class="container rounded" style="padding-top: 3%; background-color: #f1f1f1">
                 <h1 style="text-align: center; font-size:35pt">
-                        Wanna Contact the RA?
+                        Wanna Contact the RA? (Still working on it)
                 </h1>
                 <div class="container" style="padding-top: 3%;">
                         <!-- <div class="topic">Annoucements:</div> -->
                         <div class="row">
-                                <div class="col-lg-6 col-md-10 mx-auto" style="padding-top: 3%">
-                                        <!-- this is where I post stuff -->
-                                        <h1 style="text-align: center">COMING SOON!</h1>
-
+                                <div class="col-md-6 col-md-offset-3" id="form_container">
+                                        
+                                        <form role="form" method="post" id="reused_form">
+                                
+                                                <div class="row">
+                                                <div class="col-sm-12 form-group">
+                                                        <label for="message">
+                                                                Message:</label>
+                                                        <textarea class="form-control" type="textarea" name="message" id="message" maxlength="6000" rows="7"></textarea>
+                                                </div>
+                                                </div>
+                                                <div class="row">
+                                                        <div class="col-sm-6 form-group">
+                                                                <label for="name">Your Name:</label>
+                                                                <input type="text" class="form-control" id="name" name="name" required>
+                                                        </div>
+                                                </div>
+                                
+                                
+                                                <div class="row">
+                                                <div class="col-sm-12 form-group">
+                                                        <button type="submit" class="btn btn-lg btn-default pull-right" >Send →</button>
+                                                </div>
+                                                </div>
+                                
+                                        </form>
+                                        <div id="success_message" style="width:100%; height:100%; display:none; ">
+                                                <h3>Posted your message successfully!</h3>
+                                        </div>
+                                        <div id="error_message"
+                                                style="width:100%; height:100%; display:none; ">
+                                                        <h3>Error</h3>
+                                                        Sorry there was an error sending your form.
+                                
+                                        </div>
                                 </div>
                         </div>
                 </div>
