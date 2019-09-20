@@ -91,6 +91,10 @@ background-color: #4CAF50;
         height: 200px;
         padding-right: 60px;   
     }
+
+    .header {
+        background-size: 50%;
+    }
 }
 
 @media screen and (max-width: 360px) {
