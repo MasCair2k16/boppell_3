@@ -84,13 +84,13 @@ background-color: #4CAF50;
         padding-right: 60px; 
     }
 
-    .header {
+    /* .header {
         background-size: 50%;
-    }
+    } */
 
     .openbtn{
         size: 95px;
-        color: black;  
+        color: white;  
     }
 
 
@@ -116,7 +116,7 @@ background-color: #4CAF50;
 
     .openbtn{
         size: 95px;
-        color: black;  
+        color: white;  
     }
 
     .sidebar {
@@ -135,7 +135,7 @@ background-color: #4CAF50;
 
     .openbtn{
         size: 95px;
-        color: black;  
+        color: white;  
     }
     
     .header {
@@ -158,7 +158,7 @@ background-color: #4CAF50;
 
     .openbtn{
         size: 95px;
-        color: black;  
+        color: white;  
     }
     
     .header {
