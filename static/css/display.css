@@ -75,7 +75,7 @@ background-color: #4CAF50;
     font-size: 30pt;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 750px) {
     
     .frontText{
         font-size: 32pt;
@@ -84,13 +84,13 @@ background-color: #4CAF50;
         padding-right: 60px; 
     }
 
-    /* .header {
-        background-size: 50%;
-    } */
+    .header {
+        background-size: 0%;
+    }
 
     .openbtn{
         size: 95px;
-        color: white;  
+        color: black;  
     }
 
 
@@ -101,7 +101,7 @@ background-color: #4CAF50;
     
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 1080px) {
     
     .frontText{
         font-size: 30pt;
@@ -111,12 +111,12 @@ background-color: #4CAF50;
     }
 
     .header {
-        background-size: 50%;
+        background-size: 0%;
     }
 
     .openbtn{
         size: 95px;
-        color: white;  
+        color: black;  
     }
 
     .sidebar {
@@ -124,7 +124,7 @@ background-color: #4CAF50;
     }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1440px) {
     
     .frontText{
         font-size: 25pt;
@@ -135,11 +135,11 @@ background-color: #4CAF50;
 
     .openbtn{
         size: 95px;
-        color: white;  
+        color: black;  
     }
     
     .header {
-        background-size: 50%;
+        background-size: 0%;
     }
 
     .sidebar {
@@ -147,7 +147,7 @@ background-color: #4CAF50;
     }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 15px) {
     
     .frontText{
         font-size: 25pt;
@@ -158,14 +158,15 @@ background-color: #4CAF50;
 
     .openbtn{
         size: 95px;
-        color: white;  
+        color: black;  
     }
     
     .header {
-        background-size: 50%;
+        background-size: 0%;
     }
 
     .sidebar {
         width: 500;
     }
 }
+
