@@ -1,8 +1,8 @@
 .header {
     text-align: center;
     background: #942c2c;
-    color: black;
-    background: url('../photos/pineForest.jpeg') center/cover;
+    color: white;
+    background: url('../photos/forest_backdrop.jpeg') center/cover;
     position: relative;
     /* background-size: 50% 100%; */
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@ background-color: #4CAF50;
     font-size: 30pt;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 250px) {
     
     .frontText{
         font-size: 32pt;
@@ -90,10 +90,11 @@ background-color: #4CAF50;
 
     .openbtn{
         size: 95px;
+        color: #111;
     }
 
     .sidebar a {
-        width: 500px;
+        width: 250px;
     }
 }
 
@@ -108,6 +109,7 @@ background-color: #4CAF50;
 
     .openbtn{
         size: 95px;
+        color: #111;
     }
     
 }
@@ -123,5 +125,29 @@ background-color: #4CAF50;
 
     .openbtn{
         size: 95px;
+        color: #111;
+    }
+}
+
+@media screen and (max-width: 411px) {
+    
+    .frontText{
+        font-size: 32pt;
+        background-position-y: 30%;
+        height: 200px;
+        padding-right: 60px;   
+    }
+
+    .header {
+        background-size: 50%;
+    }
+
+    .openbtn{
+        size: 95px;
+        color: #111;
+    }
+
+    .sidebar a {
+        width: 250px;
     }
 }
